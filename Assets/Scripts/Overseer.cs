@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class Overseer : MonoBehaviour
 {
-    public PlayerMovement PlayerMovement;
-    public PlayerBall PlayerBall;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,11 +29,5 @@ public class Overseer : MonoBehaviour
             Cursor.lockState = CursorLockMode.Confined;
             Cursor.visible = false;
         }
-    }
-
-    public void Off()
-    {
-        PlayerMovement.enabled = false;
-        PlayerBall.enabled = false;
     }
 }
