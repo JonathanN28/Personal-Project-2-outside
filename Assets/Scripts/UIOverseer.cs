@@ -39,7 +39,7 @@ public class UIOverseer : MonoBehaviour
             restartButton.SetActive(true);
         }
     }
-    public void Restart()
+    public static void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
